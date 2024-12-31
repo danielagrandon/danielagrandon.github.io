@@ -1,49 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dr Daniela Grandón</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1 {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
             color: #333;
         }
-        figure {
-            margin: 20px 0;
+        header {
+            background: url('your-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 3em 0;
             text-align: center;
         }
-        figure img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
+        header h1 {
+            font-size: 3em;
+            margin: 0;
         }
-        figcaption {
-            margin-top: 8px;
-            font-size: 0.9em;
-            color: #555;
+        header p {
+            font-size: 1.9em;
+            margin: 0.5em 0 0;
+        }
+        nav {
+            margin: 1em 0 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Cosmologist and data scientist at Leiden University</h1>
-    <p>This is hosted on GitHub Pages. Below are some figures for illustration:</p>
-
-    <figure>
-        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
-        <figcaption>Figure 1: A placeholder image representing your content.</figcaption>
-    </figure>
-
-    <figure>
-        <img src="https://via.placeholder.com/400x300" alt="Another Placeholder Image">
-        <figcaption>Figure 2: Another example image with a caption.</figcaption>
-    </figure>
-
-    <p>You can replace these images with your own by uploading files to your repository or linking to external images.</p>
+    <header>
+        <h1>Daniela Grandón</h1>
+        <p>Cosmologist and Data Scientist at Leiden University</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Appointments</a>
+            <a href="#contact">Education</a>
+            <a href="#contact">Publications</a>
+            <a href="#contact">Mentoring</a>
+            <a href="#contact">Teaching</a>
+            <a href="#contact">Talks</a>
+        </nav>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>This is a sample webpage created to showcase a basic HTML structure with some CSS styling. You can add your content here!</p>
+        <h2>Services</h2>
+        <p>We offer a variety of services to meet your needs. Feel free to explore our website to learn more.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Webpage. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
-
