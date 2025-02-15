@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniela Grandon</title>
+    <title>Dr. Daniela Grandón | Cosmologist</title>
     <style> 
         body {
-            font-family: Garamond, Georgia, serif;
-            margin: 3;
+            font-family: Georgia, serif;
+            margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #403e3b;
+            line-height: 1.6;
         }
         header {
             background: url('./esa.png') no-repeat center center/cover;
             color: #fff;
-            padding: 3em 0;
+            padding: 4em 0;
             text-align: center;
+            position: relative;
         }
         header h1 {
-            font-size: 3em;
+            font-size: 3.2em;
             margin: 0;
         }
         header p {
-            font-size: 1.9em;
-            margin: 0.5em 0 0;
+            font-size: 1.5em;
+            margin-top: 0.5em;
         }
         header .credits {
             position: absolute;
             top: 10px;
             right: 10px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.6);
             color: #fff;
             padding: 5px 10px;
             font-size: 0.9em;
-            border-radius: 3px;
+            border-radius: 5px;
         }
         nav {
-            margin: 1em 0 0;
             text-align: center;
+            background: #333;
+            padding: 1em 0;
         }
         nav a {
             color: #fff;
@@ -50,7 +53,12 @@
             text-decoration: underline;
         }
         main {
+            max-width: 900px;
+            margin: 2em auto;
             padding: 2em;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         .about-section {
             display: flex;
@@ -58,57 +66,63 @@
             gap: 20px;
         }
         .about-section img {
-            width: 50%;
-            height: auto;
+            width: 30%;
+            border-radius: 10px;
         }
         .about-section .text {
-            width: 50%;
+            width: 70%;
         }
         footer {
-            background: #333;
+            background: #222;
             color: #fff;
             text-align: center;
             padding: 1em 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: 2em;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="credits">Photo: A. Schaller (STScI) for ESA</div>
-        <h1>Daniela Grandón</h1>
-        <p>Cosmologist and Data Scientist @ Leiden University</p>
-        <nav>
-            <a href="#">Home</a>
-            <a href="bio.html">Bio</a>
-            <a href="#research">Research</a>
-            <a href="#mentoring">Mentoring</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#talks">Talks</a>
-            <a href="#outreach">Outreach</a>
-        </nav>
+        <h1>Dr. Daniela Grandón</h1>
+        <p>Theoretical Cosmologist & Data Scientist | Leiden University</p>
     </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#mentoring">Mentoring</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#talks">Talks</a>
+        <a href="#outreach">Outreach</a>
+        <a href="cv.html">CV</a>
+    </nav>
+    
     <main>
         <section class="about-section">
-            <img src="dani.png" alt="About Us Image" style="width:15%">
+            <img src="dani.png" alt="Daniela Grandón">
             <div class="text">
-                <h2>About me</h2>
-                <p>I'm a cosmologist working at the intersection of theoretical cosmology and data science. I am a postdoctoral research associate and lecturer at Leiden University, The Netherlands. Broadly speaking, my research focuses on studying non-Gaussianities in cosmic fields and performing accurate, precise statistical analyses to infer cosmological parameters.
-
-I'm particularly interested in cosmological probes such as weak gravitational lensing and in developing statistical methods based on machine learning and Bayesian inference.
-
-I'm an active member of the Rubin LSST and Euclid collaborations. I co-lead the Higher Order Statistics Topical Team within LSST-DESC, and co-lead of the Data Release 1 Euclid cosmological analysis using higher-order statistics.
-
-In 2022, I was awarded the L'Oréal-UNESCO "For Women in Science" Prize in Chile. </p>
+                <h2>About Me</h2>
+                <p>I am a physicist specializing in the intersection of theoretical cosmology and data science. Currently, I serve as a postdoctoral research associate and lecturer at Leiden University, where my work focuses on the statistical characterization of non-Gaussian cosmic fields and the development of high-precision inference methods for cosmological parameters.</p>
+                <p>My research explores advanced statistical tools, weak gravitational lensing, machine learning-based inference, and Bayesian frameworks, to elucidate fundamental physics about the Universe. I co-lead the Higher Order Statistics Topical Team within LSST-DESC and co-lead the Data Release 1 Euclid cosmological analysis, pushing forward the frontier of data-driven cosmology.</p>
+                <p>In 2022, I was honored with the L'Oréal-UNESCO "For Women in Science" Prize in Chile for my contributions to cosmology and data science.</p>
             </div>
         </section>
-
-    
     </main>
+    
     <footer>
-        <p>&copy; 2024 Dr Daniela Grandón. All Rights Reserved.</p>
+        <p>&copy; 2024 Dr. Daniela Grandón. All Rights Reserved. | 
+        <a href="https://orcid.org/your-orcid-link">ORCID</a> | 
+        <a href="https://scholar.google.com/citations?user=your-id">Google Scholar</a></p>
     </footer>
 </body>
 </html>
