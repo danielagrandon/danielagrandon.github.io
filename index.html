@@ -172,16 +172,14 @@ button:hover { background: rgba(0, 0, 0, 0.8); }
             
             <p>Beyond research, I am an advocate for diversity in STEM, actively mentoring young researchers and promoting scientific outreach. Despite living abroad, I constantly organize in-person outreach activities in my hometown, Villa Alemana (German village, in english, also known as the city of mills). In 2023, I was named a Distinguished Citizen by the Municipality's council.</p>
         </section>
-
         <section id="outreach">
             <h2>Outreach</h2>
-            <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-container">
                 <img src="1737149367345(1).jpg" class="active" alt="Outreach Image 1">
                 <img src="danielagrandon3.jpg" alt="Outreach Image 2">
             </div>
-            <div class="carousel-controls">
-                <button class="btn" onclick="prevSlide()">&#10094; Prev</button>
-                <button class="btn" onclick="nextSlide()">Next &#10095;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
         </section>
     </main>
