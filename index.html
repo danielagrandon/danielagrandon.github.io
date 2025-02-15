@@ -185,27 +185,28 @@ button:hover { background: rgba(0, 0, 0, 0.8); }
             </div>
         </section>
     </main>
-        <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll(".carousel img");
-        
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove("active");
-                if (i === index) slide.classList.add("active");
-            });
-        }
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".carousel-item");
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active");
+            if (i === index) slide.classList.add("active");
+        });
+    }
 
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-    </script>
+    function moveSlide(step) {
+        currentSlide += step;
+        if (currentSlide >= slides.length) currentSlide = 0;
+        if (currentSlide < 0) currentSlide = slides.length - 1;
+        showSlide(currentSlide);
+    }
+
+    // Show first slide initially
+    showSlide(currentSlide);
+</script>
+
     <footer>
         <p>&copy; 2024 Dr. Daniela Grandón. All Rights Reserved. | 
         <a href="https://orcid.org/0000-0003-4953-7864">ORCID</a> | 
