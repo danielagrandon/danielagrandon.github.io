@@ -75,6 +75,49 @@
         .bio-section {
             margin-top: 3em;
         }
+        .carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your design */
+    height: auto;
+    display: none; /* Hide all images initially */
+    border-radius: 10px;
+}
+
+.carousel-item.active {
+    display: block; /* Show the active image */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+button:hover { background: rgba(0, 0, 0, 0.8); }
+
         footer {
             background: #222;
             color: #fff;
