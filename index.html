@@ -91,9 +91,10 @@
 }
 
 .carousel-item {
-    width: 100%;
-    max-width: 600px; /* Adjust based on your design */
-    height: auto;
+    width: 100%; /* Adjust based on the container */
+    max-width: 600px; /* Set a fixed max-width */
+    height: 400px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fill the container without distortion */
     display: none; /* Hide all images initially */
     border-radius: 10px;
 }
@@ -101,6 +102,7 @@
 .carousel-item.active {
     display: block; /* Show the active image */
 }
+
 
 button.prev, button.next {
     position: absolute;
